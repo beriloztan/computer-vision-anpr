@@ -8,6 +8,10 @@ OpenCV temellerinden başlayıp uçtan uca otomatik plaka tanıma (ANPR) sistemi
 ![Plaka Tespiti](assets/plaka_tespit_demo.jpg)
 *3 plaka tespit edildi — güven skorları: 0.61, 0.52, 0.40*
 
+### OCR ile Plaka Okuma
+![OCR Demo](assets/ocr_demo.jpg)
+*Ön işleme sonrası EasyOCR çıktısı: `34CC2034` — OCR güven: 0.80*
+
 ### Görüntü İşleme Temelleri (OpenCV)
 ![Görüntü Temelleri](assets/goruntu_temelleri_demo.png)
 *Orijinal → Grayscale → Gaussian Blur → Canny Edge Detection → Threshold*
