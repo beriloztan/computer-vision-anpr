@@ -1,0 +1,18 @@
+# Gizli anahtarlar
+.env
+
+# Model ağırlıkları (büyük dosyalar)
+models/
+
+# Veri seti ve eğitim çıktıları
+data/
+runs/
+License-Plate-Recognition-11/
+
+# Çalışma zamanı çıktıları
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
