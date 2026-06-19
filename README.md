@@ -54,10 +54,27 @@ ROBOFLOW_API_KEY=your_key_here
 
 ## Model Sonuçları
 
-| Model | Veri Seti | Metrik |
-|---|---|---|
-| SimpleCNN | MNIST | ~%99 test accuracy |
-| YOLOv8n fine-tuned | License Plate Recognition (Roboflow) | mAP50: `runs/` klasörüne bak |
+### YOLOv8n — Plaka Tespiti (Fine-tuned)
+
+| Metrik | Değer |
+|---|---|
+| Precision | 0.977 |
+| Recall | 0.946 |
+| **mAP50** | **0.969** |
+| mAP50-95 | 0.687 |
+| Inference hızı | 1.6ms / görüntü |
+
+- Eğitim: 25 epoch, Tesla T4 GPU, ~55 dakika
+- Veri seti: 7057 eğitim + 2048 validasyon görüntüsü
+- Model: YOLOv8n (COCO pretrained → plaka fine-tune)
+
+### SimpleCNN — MNIST Rakam Sınıflandırma
+
+| Metrik | Değer |
+|---|---|
+| Test Accuracy | ~%99 |
+| Mimari | 2x Conv + MaxPool + FC |
+| Eğitim | 3 epoch, CPU |
 
 ## Kullanılan Teknolojiler
 
